@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://alsrbok.github.io/sitemap.xml
+Sitemap: https://mingyupark.github.io/sitemap.xml
