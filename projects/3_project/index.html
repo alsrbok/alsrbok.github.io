@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CHIMES project | Mingyu  Park</title>
+    <title>SAIT project | Mingyu  Park</title>
     <meta name="author" content="Mingyu  Park">
-    <meta name="description" content="Enable full exploration for Heterogeneous 3D IC based on Multi-objective DSE and unbalanced area.">
+    <meta name="description" content="Develop a routing-congestion awared Tier Partioner for 3nm 3D ICs.">
     <meta name="keywords" content="Min Gyu Park, Min Gyu, Mingyu, Mingyu Park ECE">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img/icon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://mingyupark.github.io/projects/1_project/">
+    <link rel="canonical" href="https://mingyupark.github.io/projects/3_project/">
     
     <!-- Dark Mode -->
     
@@ -110,89 +110,14 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">CHIMES project</h1>
-            <p class="post-description">Enable full exploration for Heterogeneous 3D IC based on Multi-objective DSE and unbalanced area.</p>
+            <h1 class="post-title">SAIT project</h1>
+            <p class="post-description">Develop a routing-congestion awared Tier Partioner for 3nm 3D ICs.</p>
           </header>
 
           <article>
-            <p><strong>Period</strong>: <code class="language-plaintext highlighter-rouge">Sep. 2023 - Current</code></p>
+            <p><strong>Period</strong>: <code class="language-plaintext highlighter-rouge">Jan. 2024 - Current</code></p>
 
 <h2 id="motivation">Motivation</h2>
-
-<hr>
-<p> 3D IC design is one innovative way to continue the trend of creating more powerful circuits. This enables not only a homogeneous integration style, but also a heterogeneous integration style with different technology scales between tiers, providing a variety of benefits.</p>
-
-<p> However, different integration style options place a burden on chip designers during physical design (PD) flows. Today, even 2D chip designers perform extensive design space exploration to achieve the desired Power Performance Area (PPA) using a series of PD flows. This situation is even worse in 3D IC design. For two-tier 3D ICs, with two types of technology and both homogeneous and heterogeneous integration, designers now have to explore four times as much as before, which is time-consuming.</p>
-
-<h2 id="contribution">Contribution</h2>
-
-<hr>
-<ol>
-  <li>Developed a unified frequency model for two different datasets, demonstrating generalizability.
-    <ul>
-      <li>
-<strong>Mean 0.50%, maximum 4.67%</strong> error rate in predicting scale-out design.</li>
-    </ul>
-  </li>
-  <li>Suggested new method for power model that can predict power of heterogeneous 3D IC design with only homogeneous 3D ICs dataset.
-    <ul>
-      <li>
-<strong>Mean 0.74%, maximum 2.27%</strong> error rate in predicting <strong>scale-out &amp; heterogeneous design</strong>
-</li>
-      <li>Significant improvement compared to previous 3DNN-Xplorer work.(3.1% / 8.3%)</li>
-    </ul>
-  </li>
-  <li>Developed runtime models for four workloads: ResNet34, ResNet50, Mobilenet v1, Googlenet.
-    <ul>
-      <li>Various feature engineering techniques is used to improve the accuracy.</li>
-    </ul>
-  </li>
-  <li>Utilized the above three models to predict the energy metric and achieve reasonable accuracy.</li>
-</ol>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/Chiems_Runtime-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/Chiems_Runtime-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/Chiems_Runtime-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/Chiems_Runtime.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/Chimes_Energy-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/Chimes_Energy-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/Chimes_Energy-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/Chimes_Energy.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Left: Runtime model comparison, Right: Energy model comparison
-</div>
-
-<p>With these four models, chip designers can efficiently perform design space exploration for 3D ICs. This work can also be extended to other datasets in a unified model.</p>
 
           </article>
 
